@@ -10,7 +10,6 @@ defmodule Collatz.Display do
   def format(graph) do
     format(graph, [1])
     |> Element.to_string()
-    |> IO.puts()
   end
 
   defp format(graph, [num]) do
