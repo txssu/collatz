@@ -1,6 +1,6 @@
 defmodule Collatz.Display do
-  alias Collatz.Element
-  import Collatz.Element.Operators
+  alias Markex.Element
+  import Markex.Element.Operators
 
   @space Element.new(" ")
   @down Element.new("|")
@@ -9,7 +9,7 @@ defmodule Collatz.Display do
 
   def format(graph) do
     format(graph, [1])
-    |> Element.make_string()
+    |> Element.to_string()
     |> IO.puts()
   end
 
@@ -30,7 +30,7 @@ defmodule Collatz.Display do
 
     elem = Enum.reduce(columns, fn elem, acc ->
       acc <|> @space
-      |> Element.beside(elem, :bottom)
+      |> Element.beside(elem, :top)
     end)
 
     connector(columns) <~> elem

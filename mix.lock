@@ -1,0 +1,3 @@
+%{
+  "markex": {:hex, :markex, "1.1.0", "2d36704d86aab244a4a054efa51f5ed8d57dec3874c09889f08d91b52409969d", [:mix], [], "hexpm", "4cba16249bfcf4cea24671ee0803036649772afeaf84fbb8284939e4923ce123"},
+}
