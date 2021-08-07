@@ -19,7 +19,8 @@ defmodule Collatz.MixProject do
 
   defp deps do
     [
-      {:markex, "~> 1.1"}
+      {:markex, "~> 1.1"},
+      {:bintree, "~> 1.0"}
     ]
   end
 end

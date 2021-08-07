@@ -1,3 +1,4 @@
 %{
+  "bintree": {:hex, :bintree, "1.0.0", "b6abf512ef012bcbf1fb9d1554fc8a28310320352bc37a0a29ca09903872b195", [:mix], [{:markex, "~> 1.1", [hex: :markex, repo: "hexpm", optional: false]}], "hexpm", "4f12af187c429d630b5be55722f860b59b185533dd78bd3d3e661edac813aaa2"},
   "markex": {:hex, :markex, "1.1.0", "2d36704d86aab244a4a054efa51f5ed8d57dec3874c09889f08d91b52409969d", [:mix], [], "hexpm", "4cba16249bfcf4cea24671ee0803036649772afeaf84fbb8284939e4923ce123"},
 }
