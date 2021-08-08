@@ -60,8 +60,8 @@ defmodule Collatz.CLI do
   defp process({:for, nums}) do
     nums
     |> Stream.map(&Collatz.Sequence.new/1)
-    |> Enum.reduce(%{}, &Collatz.Graph.add(&2, &1))
-    |> Collatz.Display.format()
+    |> Collatz.Convert.nums_to_bintree()
+    |> Bintree.to_string()
   end
 
   defp process({:depth, num}) do
